@@ -2,3 +2,4 @@
 
 print("hallo world")
 print("ahoj svete")
+print("kurva to je picovina")
