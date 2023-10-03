@@ -1,3 +1,3 @@
-# Uvod do Pyythonu MUNI
+# Uvod do Pythonu MUNI
 
 print('hallo world')
