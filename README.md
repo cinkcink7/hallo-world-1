@@ -1,4 +1,3 @@
-# hallo-world-1
-Toto je muj pokus
+# Uvod do Pyythonu MUNI
 
 print('hallo world')
