@@ -10,9 +10,30 @@
 # 4 0
 
 
+# cislo = int(input("Zadej přirozené číslo: "))
+# pocet_deleni = 0
+
+# while cislo > 1:
+#     if cislo % 2 == 0:
+#         cislo = cislo // 2
+#         pocet_deleni += 1
+#     else:
+#         break
+
+# print("Počet dělení dvěma:", pocet_deleni)
+
+###################################################################################
+
+
+# var b
+
+# Načtěte přirozené číslo ze vstupu
 cislo = int(input("Zadej přirozené číslo: "))
+
+# Inicializujte proměnnou pro počet dělení
 pocet_deleni = 0
 
+# Počítejte, kolikrát lze číslo dělit dvěma
 while cislo > 1:
     if cislo % 2 == 0:
         cislo = cislo // 2
@@ -20,8 +41,8 @@ while cislo > 1:
     else:
         break
 
-print("Počet dělení dvěma:", pocet_deleni)
-
+# Vypište počet dělení dvěma
+print(pocet_deleni)
 
 
 
