@@ -12,17 +12,27 @@
 # [ ]: x, y, z = [float(x) for x in input().split()] # vstup
 # ...
 # print(are_distinct) # výstu
- 
-x = float(input("Zadej první číslo: "))
-y = float(input("Zadej druhé číslo: "))
-z = float(input("Zadej třetí číslo: "))
+#  varA
+# x = float(input("Zadej první číslo: "))
+# y = float(input("Zadej druhé číslo: "))
+# z = float(input("Zadej třetí číslo: "))
 
-# Porovnej čísla a zkontroluj, zda jsou všechna různá
+# # Porovnej čísla a zkontroluj, zda jsou všechna různá
+# are_distinct = x != y and x != z and y != z
+
+# # Výstup v závislosti na výsledku
+# if are_distinct:
+#     print(True)
+# else:
+#     print(False)
+  
+
+# var B:
+
+
+x, y, z = [float(x) for x in input().split()]
+
+# Porovnává, zda jsou tři čísla různá
 are_distinct = x != y and x != z and y != z
 
-# Výstup v závislosti na výsledku
-if are_distinct:
-    print(True)
-else:
-    print(False)
-  
+print(are_distinct)

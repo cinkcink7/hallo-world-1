@@ -14,3 +14,4 @@
 cislo = float(input("Napis cislo: \n"))
 vedecky_format = "{:.2E}".format(cislo)
 print(vedecky_format)
+

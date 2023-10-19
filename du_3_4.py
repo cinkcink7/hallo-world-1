@@ -15,13 +15,34 @@
 # G: 3 G: 0
 # T: 4 T: 10
 
-sekvence = input("Zadej retezec DNA: \n")
 
-a = sekvence.count("A")
-t = sekvence.count("T")
-c = sekvence.count("C")
-g = sekvence.count("G")
+# varA
+# sekvence = input("Zadej retezec DNA: \n")
 
-# print(f"A : {a} C : {c} G : {g} T : {t}")
-print(f"A : {a}\nC : {c}\nG : {g}\nT : {t}")
+# a = sekvence.count("A")
+# t = sekvence.count("T")
+# c = sekvence.count("C")
+# g = sekvence.count("G")
+
+# # print(f"A : {a} C : {c} G : {g} T : {t}")
+# print(f"A : {a}\nC : {c}\nG : {g}\nT : {t}")
+
+
+# varB
+
+
+sequence = input()  # Načte sekvenci DNA ze vstupu
+
+# Inicializuje slovník pro ukládání četností
+base_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+
+# Prochází sekvenci a počítá četnosti
+for base in sequence:
+    if base in base_counts:
+        base_counts[base] += 1
+
+# Vypíše výsledky
+for base, count in base_counts.items():
+    print(f"{base}: {count}")
+
 

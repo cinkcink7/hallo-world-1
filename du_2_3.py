@@ -10,21 +10,31 @@
 # Vzorový vstup:
 # 3.82 3.56
 
-from math import pi, sqrt
-# Načtěte čísla od uživatele oddělená mezerami
-cisla = input("Zadej dve čísla oddělená mezerami: ").split()
+# varA:
 
-# Zkontrolujte, zda uživatel zadal tři čísla
-if len(cisla) != 2:
-    print("Musíte zadat právě dve čísla.")
-else:
-    # Převeďte vstupní řetězce na desetinná čísla
-    a = float(cisla[0])
-    b = float(cisla[1])
-    
-    # Vypočítejte součet
-    c = sqrt(a**2 + b**2)
+# from math import pi, sqrt
+# # Načtěte čísla od uživatele oddělená mezerami
+# cisla = input("Zadej dve čísla oddělená mezerami: ").split()
 
-    # Vypište výsledek
+# # Zkontrolujte, zda uživatel zadal tři čísla
+# if len(cisla) != 2:
+#     print("Musíte zadat právě dve čísla.")
+# else:
+#     # Převeďte vstupní řetězce na desetinná čísla
+#     a = float(cisla[0])
+#     b = float(cisla[1])
     
-    print(f'{c:.2f}') 
+#     # Vypočítejte součet
+#     c = sqrt(a**2 + b**2)
+
+#     # Vypište výsledek
+    
+#     print(f'{c:.2f}') 
+
+# varB:
+import math
+
+a, b = [float(x) for x in input().split()]
+c = math.sqrt(a**2 + b**2)
+print(f"{c:.2f}")
+

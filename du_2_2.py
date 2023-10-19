@@ -21,27 +21,39 @@
 # print(f'{V:.2f}') # výstup (na 2 desetinná místa)
 
 
-from math import pi
-# Načtěte čísla od uživatele oddělená mezerami
-cisla = input("Zadej dve čísla oddělená mezerami: ").split()
+# varA
 
-# Zkontrolujte, zda uživatel zadal tři čísla
-if len(cisla) != 2:
-    print("Musíte zadat právě dve čísla.")
-else:
-    # Převeďte vstupní řetězce na desetinná čísla
-    r = float(cisla[0])
-    v = float(cisla[1])
+# from math import pi
+# # Načtěte čísla od uživatele oddělená mezerami
+# cisla = input("Zadej dve čísla oddělená mezerami: ").split()
+
+# # Zkontrolujte, zda uživatel zadal tři čísla
+# if len(cisla) != 2:
+#     print("Musíte zadat právě dve čísla.")
+# else:
+#     # Převeďte vstupní řetězce na desetinná čísla
+#     r = float(cisla[0])
+#     v = float(cisla[1])
     
 
 
     
 
-    # Vypočítejte součet
-    V = 1/3 * pi * (r**2) * v 
+#     # Vypočítejte součet
+#     V = 1/3 * pi * (r**2) * v 
 
-    # Vypište výsledek
-    # print(V)
-    print(f'{V:.2f}') 
+#     # Vypište výsledek
+#     # print(V)
+#     print(f'{V:.2f}') 
+
+
+#varB
+
+import math
+
+r, v = [float(x) for x in input().split()]
+V = (1/3) * math.pi * r**2 * v
+print(f'{V:.2f}')
+
 
 

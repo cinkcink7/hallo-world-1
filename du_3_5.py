@@ -17,17 +17,39 @@
 # G: 30 % G: 0 %
 # T: 40 % T: 56 
 
-sekvence = input("Zadej retezec DNA: \n")
 
-aa = sekvence.count("A")
-tt = sekvence.count("T")
-cc = sekvence.count("C")
-gg = sekvence.count("G")
-celkem = aa + tt + cc + gg 
-a = 100* aa // celkem 
-t = 100* tt // celkem
-c = 100* cc // celkem
-g = 100* gg // celkem
-# print(f"A : {a} C : {c} G : {g} T : {t}")
-print(f"A : {a} %\nC  : {c} %\nG  : {g} %\nT : {t} %")
+# varA
+# sekvence = input("Zadej retezec DNA: \n")
 
+# aa = sekvence.count("A")
+# tt = sekvence.count("T")
+# cc = sekvence.count("C")
+# gg = sekvence.count("G")
+# celkem = aa + tt + cc + gg 
+# a = 100* aa // celkem 
+# t = 100* tt // celkem
+# c = 100* cc // celkem
+# g = 100* gg // celkem
+# # print(f"A : {a} C : {c} G : {g} T : {t}")
+# print(f"A : {a} %\nC  : {c} %\nG  : {g} %\nT : {t} %")
+
+
+
+# varB
+sequence = input()  # Načte sekvenci DNA ze vstupu
+
+# Inicializuje slovník pro ukládání četností
+base_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+
+# Prochází sekvenci a počítá četnosti
+for base in sequence:
+    if base in base_counts:
+        base_counts[base] += 1
+
+# Celková délka sekvence
+sequence_length = len(sequence)
+
+# Vypíše relativní četnosti v procentech
+for base, count in base_counts.items():
+    relative_frequency = (count / sequence_length) * 100
+    print(f"{base}: {int(round(relative_frequency))} %")

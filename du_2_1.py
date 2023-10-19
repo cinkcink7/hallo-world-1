@@ -15,9 +15,16 @@
 # o = ...
 # print(o) # výstup
 
-a = float(input("Zadej a:"))
-b = float(input('Zadej b:'))
-c = float(input("Zadej c:"))
+#varA
 
-o = a + b + c
+# a = float(input("Zadej a:"))
+# b = float(input('Zadej b:'))
+# c = float(input("Zadej c:"))
+
+# o = a + b + c
 print (o)
+################################################################3
+#varB
+a, b, c = [float(x) for x in input().split()]
+o = a + b + c
+print(o)

@@ -1,6 +1,6 @@
 
 # du_X_Y.py
-print("Hallo World!")
+
 # Povinné domácí úkoly
 # DÚ 2.1: Obvod trojúhelníku
 # Úkol:
@@ -13,4 +13,9 @@ print("Hallo World!")
 # [ ]: a, b, c = [float(x) for x in input().split()] # vstup
 # o = ...
 # print(o) # výstup
+
+a, b, c = [float(x) for x in input().split()]
+o = a + b + c
+print(o)
+
 
