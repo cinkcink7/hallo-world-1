@@ -38,6 +38,7 @@
 
 #varB
 
+from math import ceil
 
 def backwards(veta: str) -> str:
     veta = veta.lower()  # Převedení věty na malá písmena
